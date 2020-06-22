@@ -1,0 +1,21 @@
+####### TASK 1  #######
+
+nano ~/hungry.sh
+
+#inside hungry.sh
+
+#!/bin/bash
+
+echo "I am hungry. Feed me data." >> ~/demands.txt
+
+date >> ~/demands.log
+
+# hungry.sh ends
+
+########  TASK 2  ########
+
+crontab -e
+
+# adding new row*
+
+* * * * *   bash ~/hungry.sh
